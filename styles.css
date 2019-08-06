@@ -23,12 +23,39 @@ body {
     color: var(--color--text);
 }
 
+h1 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 3.25rem;
+    margin: 0.75rem 0 1.5rem 0;
+}
+
+h2 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    color: var(--color--text__primary)
+}
+
+h3 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 0rem;
+    margin-bottom: 0.7rem;
+}
+
 h4 {
     font-family: Nunito;
     font-style: normal;
     font-weight: 600;
-    font-size: 25px;
-    line-height: 34px;
+    font-size: 1.25rem;
+    line-height: 1.7rem;
     color: var(--color--primary__light);
 }
 
@@ -55,14 +82,63 @@ h4 {
     justify-content: center;
 }
 
-.whs--logo {
-    /* max-width: 300px; */
+/* .whs--logo {
+    max-width: 100px;
+    height: auto;
+} */
+
+.nextMeeting {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3rem;
+    padding: 0;
+}
+
+.calendar {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 41px;
+    text-align: center;
+    color: var(--color--text__primary);
+    /* width: 6rem;
+    height: 7rem; */
+}
+
+.month {
+    margin: 0;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--color--text);
+    border-radius: 1.5rem 1.5rem 0px 0px;
+}
+
+.day {
+    margin: 0;
+    padding: 1rem 1.5rem;
+    border: 0.3rem solid var(--color--text);
+    box-sizing: border-box;
+    border-radius: 0 0 1.5rem 1.5rem;
+    font-size: 3rem;
+}
+
+.nextMeeting--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.NextMeeting--text__reminder {
+    font-weight: bold;
+    /* margin-bottom: 0.3rem; */
 }
 
 @media (min-width: 768px) {
     .header--main {
         display: grid;
         grid-template-columns: 30% 70%;
-        
+        /* grid-column-gap: 5rem; */
     }
 }
