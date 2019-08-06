@@ -181,6 +181,12 @@ hr {
     margin-top: 2.5rem;
 }
 
+label {
+    color: var(--color--text__primary);
+    font-size: 30px;
+line-height: 41px;
+}
+
 @media (min-width: 768px) {
     .header--main {
         display: grid;
