@@ -85,6 +85,10 @@ a:hover {
     padding-top: 1.5rem;
 }
 
+.header a {
+    color: var(--color--text);
+}
+
 .hackclub--flag {
     max-width: 300px;
 }
