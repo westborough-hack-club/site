@@ -46,22 +46,23 @@ h4 {
     max-width: 300px;
 }
 
-.whs--logo {
-    max-width: 300px;
-}
-
 .header--main {
     padding: 4rem;
+}
+
+.header--logos {
+    display: flex;
+    justify-content: center;
+}
+
+.whs--logo {
+    /* max-width: 300px; */
 }
 
 @media (min-width: 768px) {
     .header--main {
         display: grid;
         grid-template-columns: 30% 70%;
-    }
-
-    .header--logos {
-        display: flex;
-        justify-content: center;
+        
     }
 }
