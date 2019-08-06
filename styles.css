@@ -59,6 +59,22 @@ h4 {
     color: var(--color--primary__light);
 }
 
+a {
+    background:
+        linear-gradient(to bottom, var(--color--accent) 0%,
+            var(--color--accent) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size .3s;
+}
+
+a:hover {
+    background-size: 4px 50px;
+}
+
 .header {
     background-image: linear-gradient(to right bottom, var(--color--primary__dark), var(--color--primary)),
         url();
@@ -154,6 +170,11 @@ hr {
     text-align: center;
     color: var(--color--text__primary);
     margin: 1rem;
+}
+
+.submitProject {
+    text-align: center;
+    margin-top: 2.5rem;
 }
 
 @media (min-width: 768px) {
