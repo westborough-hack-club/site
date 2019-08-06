@@ -1,0 +1,191 @@
+:root {
+    --color--primary: #009688;
+    --color--primary__dark: #00796B;
+    --color--primary__light: #B2DFDB;
+    --color--accent: #FF5252;
+    --color--text: #ffffff;
+    --color--text__primary: #212121;
+    --color--text__secondary: #757575;
+    --color--divider: #BDBDBD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+    color: var(--color--text);
+}
+
+h1 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 3.25rem;
+    margin: 0.75rem 0 1.5rem 0;
+}
+
+h2 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    color: var(--color--text__primary)
+}
+
+h3 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 0rem;
+    margin-bottom: 0.7rem;
+}
+
+h4 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.7rem;
+    color: var(--color--primary__light);
+}
+
+a {
+    background:
+        linear-gradient(to bottom, var(--color--accent) 0%,
+            var(--color--accent) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size .3s;
+}
+
+a:hover {
+    background-size: 4px 50px;
+}
+
+.header {
+    background-image: linear-gradient(to right bottom, var(--color--primary__dark), var(--color--primary)),
+        url();
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+    padding-top: 1.5rem;
+}
+
+.header > a {
+    color: var(--color--text);
+}
+
+.hackclub--flag {
+    max-width: 300px;
+}
+
+.header--main {
+    padding: 4rem;
+    display: grid;
+    justify-content: center;
+    border: red 3px solid;
+}
+
+/* .whs--logo {
+    max-width: 100px;
+    height: auto;
+} */
+
+.nextMeeting {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.calendar {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 41px;
+    text-align: center;
+    color: var(--color--text__primary);
+    /* width: 6rem;
+    height: 7rem; */
+}
+
+.month {
+    margin: 0;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--color--text);
+    border-radius: 1.5rem 1.5rem 0px 0px;
+}
+
+.day {
+    margin: 0;
+    padding: 1rem 1.5rem;
+    border: 0.3rem solid var(--color--text);
+    box-sizing: border-box;
+    border-radius: 0 0 1.5rem 1.5rem;
+    font-size: 3rem;
+}
+
+.nextMeeting--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.NextMeeting--text__reminder {
+    font-weight: bold;
+    /* margin-bottom: 0.3rem; */
+}
+
+.gettingStarted {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+hr {
+    width: 20rem;
+    margin: auto;
+}
+
+.gettingStarted--list {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: var(--color--text__primary);
+    margin: 1rem;
+}
+
+.submitProject {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+label {
+    color: var(--color--text__primary);
+    font-size: 30px;
+    line-height: 41px;
+}
+
+@media (min-width: 768px) {
+    .hackclub--flag {
+        max-width: 100px;
+    }
+}
