@@ -71,15 +71,20 @@ a:hover {
     background-size: 4px 50px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .header {
     background-image: linear-gradient(to right bottom, var(--color--primary__dark), var(--color--primary)),
         url();
     background-size: cover;
     background-position: top;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
     padding-top: 1.5rem;
-    height: 50vh;
+    padding-bottom: 5rem;
 }
 
 .header a {
@@ -96,11 +101,6 @@ a:hover {
     justify-content: center;
 }
 
-/* .whs--logo {
-    max-width: 100px;
-    height: auto;
-} */
-
 .nextMeeting {
     display: flex;
     justify-content: flex-start;
@@ -109,16 +109,16 @@ a:hover {
 
 .calendar {
     flex-direction: column;
-  flex-shrink: 0;
-  overflow: hidden;
-  text-align: center;
-  width: 96px;
-  height: 96px;
-  border-color: var(--color--text);
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 16px;
-  font-weight: 800;
+    flex-shrink: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 96px;
+    height: 96px;
+    border-color: var(--color--text);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 16px;
+    font-weight: 800;
 }
 
 .month {
@@ -135,62 +135,6 @@ a:hover {
     color: var(--color--accent);
 }
 
-/* .calendar {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.5rem;
-    line-height: 0;
-    text-align: center;
-    border: red 10px solid;
-    width: 8rem;
-    height: 10rem;
-    padding: 0;
-    margin: 0;
-}
-
-.month {
-    color: var(--color--text__primary);
-    padding: 1rem 0.5rem;
-    background-color: var(--color--text);
-    border: var(--color--text) 3px solid;
-    border-radius: 1.5rem 1.5rem 0 0;
-}
-
-.day {
-    color: var(--color--accent);
-    font-size: 3rem;
-    padding: 1rem 0.5rem;
-    border: var(--color--text) 3px solid;
-    border-radius: 0 0 1.5rem 1.5rem;
-} */
-
-/* .calendar {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.5rem;
-    line-height: 41px;
-    text-align: center;
-    color: var(--color--text__primary);
-    width: 6rem;
-    height: 7rem;
-}
-
-.month {
-    margin: 0;
-    padding: 0.2rem 0.5rem;
-    background-color: var(--color--text);
-    border-radius: 1.5rem 1.5rem 0px 0px;
-}
-
-.day {
-    margin: 0;
-    padding: 1rem 1.5rem;
-    border: 0.3rem solid var(--color--text);
-    box-sizing: border-box;
-    border-radius: 0 0 1.5rem 1.5rem;
-    font-size: 3rem;
-} */
-
 .nextMeeting--text {
     display: flex;
     flex-direction: column;
@@ -205,9 +149,28 @@ a:hover {
     /* margin-bottom: 0.3rem; */
 }
 
+.content {
+    text-align: center;
+    margin: 8rem 5rem;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--color--text__primary);
+    font-size: 30px;
+    line-height: 41px;
+}
+
 .gettingStarted {
     text-align: center;
-    margin-top: 5rem;
+}
+
+.about {}
+
+.about--text {
+    color: var(--color--text__secondary);
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2rem;
+    width: 400px;
 }
 
 hr {
@@ -215,34 +178,47 @@ hr {
     margin: auto;
 }
 
+.resources {
+    margin: 5rem 0;
+}
+
 .gettingStarted--list {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 41px;
     text-align: center;
-    color: var(--color--text__primary);
     margin: 1rem;
 }
 
 .submitProject {
     text-align: center;
-    margin-top: 2.5rem;
-}
-
-label {
-    color: var(--color--text__primary);
-    font-size: 30px;
-    line-height: 41px;
 }
 
 @media (min-width: 768px) {
     .hackclub--flag {
         /* max-width: 100px; */
-        position: sticky;
     }
 
     .resources {
-        display: flex;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .about {
+        text-align: left;
+        margin: 10rem;
+    }
+
+    .about--text {
+        width: 500px;
+    }
+
+    .about hr {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    .resources {
+        width: 50vw;
     }
 }

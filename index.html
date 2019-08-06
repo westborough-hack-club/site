@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/png" href="imgages/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="imgages/whs--logo.png">
 
-    <link href="https://fonts.googleapis.com/css?family=Cabin:400,600,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,600,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 
@@ -15,13 +16,10 @@
 </head>
 
 <body>
-    <div class="header">
+    <div class="header" id="particles-js">
         <img src="images/hackclub--flag.svg" alt="Hack Club 2019 Flag" class="hackclub--flag">
         <div class="header--main">
-            <!-- <div class="header--logos">
-                <img src="images/whs--logo.png" alt="Westborough High School Logo" class="whs--logo">
-            </div> -->
-            <!-- <div class="header--text"> -->
+
             <h4>Welcome to Westborough Hack Club</h4>
             <h1>A place for makers.</h1>
             <div class="nextMeeting">
@@ -43,32 +41,42 @@
                     </div>
                 </div>
             </div>
-            <!-- </div> -->
         </div>
     </div>
-    <div class="resources">
-        <div class="gettingStarted">
-            <h2>Getting Started</h2>
-            <hr>
-            <ul class="gettingStarted--list">
-                <li><a href="https://hackclub.com/community/">Slack</a></li>
-                <li><a href="https://hackclub.com/workshops/preface/">Preface</a></li>
-                <li><a href="https://hackclub.com/workshops/">Workshops</a></li>
-                <li><a href="https://hackclub.com/conduct/">Code of Conduct</a></li>
-            </ul>
+    <div class="content">
+        <div class="about">
+            <div class="about--text">
+                <h2>Who are we?</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim augue nunc curabitur rhoncus nulla
+                    interdum urna. Etiam id vitae nibh sit quam. Turpis porttitor posuere arcu nunc. Facilisis mattis
+                    iaculis scelerisque viverra id suspendisse nibh pellentesque.</p>
+            </div>
         </div>
-        <div class="submitProject">
-            <h2>Submit a Project</h2>
-            <hr>
-            <form action="https://formspree.io/syeruva2003@gmail.com" method="POST" />
-            <input type="hidden" name="_subject" value="Westborough Hack Club Project Submission" />
-            <input type="hidden" name="_cc" value="whs-hackclub-project@theos.space, syeruva2003@outlook.com" />
-            <label>Name: <input type="text" name="Name"></label>
-            </br>
-            <label>Link: </label><input type="url" name="Link"></label>
-            </br>
-            <input type="submit" value="Submit">
-            </form>
+        <div class="resources">
+            <div class="gettingStarted">
+                <h2>Getting Started</h2>
+                <hr>
+                <ul class="gettingStarted--list">
+                    <li><a href="https://hackclub.com/community/">Slack</a></li>
+                    <li><a href="https://hackclub.com/workshops/preface/">Preface</a></li>
+                    <li><a href="https://hackclub.com/workshops/">Workshops</a></li>
+                    <li><a href="https://hackclub.com/conduct/">Code of Conduct</a></li>
+                </ul>
+            </div>
+            <div class="submitProject">
+                <h2>Submit a Project</h2>
+                <hr>
+                <form action="https://formspree.io/syeruva2003@gmail.com" method="POST" />
+                <input type="hidden" name="_subject" value="Westborough Hack Club Project Submission" />
+                <input type="hidden" name="_cc" value="whs-hackclub-project@theos.space, syeruva2003@outlook.com" />
+                <label>Name: <input type="text" name="Name"></label>
+                </br>
+                <label>Link: </label><input type="url" name="Link"></label>
+                </br>
+                <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
     </div>
 </body>
