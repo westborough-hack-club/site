@@ -24,7 +24,6 @@ body {
 }
 
 h1 {
-    font-family: Nunito;
     font-style: normal;
     font-weight: 800;
     font-size: 3rem;
@@ -33,7 +32,6 @@ h1 {
 }
 
 h2 {
-    font-family: Nunito;
     font-style: normal;
     font-weight: bold;
     font-size: 2rem;
@@ -42,7 +40,6 @@ h2 {
 }
 
 h3 {
-    font-family: Nunito;
     font-style: normal;
     font-weight: bold;
     font-size: 1.5rem;
@@ -51,7 +48,6 @@ h3 {
 }
 
 h4 {
-    font-family: Nunito;
     font-style: normal;
     font-weight: 600;
     font-size: 1.25rem;
@@ -85,7 +81,7 @@ a:hover {
     padding-top: 1.5rem;
 }
 
-.header > a {
+.header a {
     color: var(--color--text);
 }
 
@@ -97,7 +93,6 @@ a:hover {
     padding: 4rem;
     display: grid;
     justify-content: center;
-    border: red 3px solid;
 }
 
 /* .whs--logo {
@@ -112,7 +107,6 @@ a:hover {
 }
 
 .calendar {
-    font-family: Nunito;
     font-style: normal;
     font-weight: bold;
     font-size: 1.5rem;
@@ -143,12 +137,13 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 1rem;
     margin-top: 1rem;
+    margin-bottom: 0.1rem;
+    margin-left: 1rem;
 }
 
 .NextMeeting--text__reminder {
-    font-weight: bold;
+    font-weight: 700;
     /* margin-bottom: 0.3rem; */
 }
 
@@ -163,7 +158,6 @@ hr {
 }
 
 .gettingStarted--list {
-    font-family: Nunito;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -187,5 +181,9 @@ label {
 @media (min-width: 768px) {
     .hackclub--flag {
         max-width: 100px;
+    }
+
+    .resources {
+        display: flex;
     }
 }
