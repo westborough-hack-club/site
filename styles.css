@@ -135,6 +135,27 @@ h4 {
     /* margin-bottom: 0.3rem; */
 }
 
+.gettingStarted {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+hr {
+    width: 20rem;
+    margin: auto;
+}
+
+.gettingStarted--list {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: var(--color--text__primary);
+    margin: 1rem;
+}
+
 @media (min-width: 768px) {
     .header--main {
         display: grid;
