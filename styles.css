@@ -1,13 +1,69 @@
-*{
+:root {
+    --color--primary: #009688;
+    --color--primary__dark: #00796B;
+    --color--primary__light: #B2DFDB;
+    --color--accent: #FF5252;
+    --color--text: #ffffff;
+    --color--text__primary: #212121;
+    --color--text__secondary: #757575;
+    --color--divider: #BDBDBD;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.7;
-    color: #fff;
+    color: var(--color--text);
+}
+
+h4 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    color: var(--color--primary__light);
+}
+
+.header {
+    background-image: linear-gradient(to right bottom, var(--color--primary__dark), var(--color--primary)),
+        url();
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+    padding-top: 1.5rem;
+}
+
+.hackclub--flag {
+    max-width: 300px;
+}
+
+.whs--logo {
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.header--main {
+    padding: 4rem;
+}
+
+@media (min-width: 768px) {
+    .header--main {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+
+    .header--logos {
+        display: flex;
+        justify-content: center;
+    }
 }
