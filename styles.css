@@ -157,20 +157,21 @@ ul {
     color: var(--color--text__primary);
     font-size: 30px;
     line-height: 41px;
+    border: blue 3px solid;
 }
 
-.gettingStarted {
+.about {
+    border: green 3px solid;
+}
+
+.about h2 {
     text-align: center;
 }
-
-.about {}
 
 .about--text {
     color: var(--color--text__secondary);
-    text-align: center;
     font-size: 1rem;
     line-height: 2rem;
-    width: 400px;
 }
 
 hr {
@@ -180,6 +181,11 @@ hr {
 
 .resources {
     margin: 5rem 0;
+    width: 100%;
+}
+
+.gettingStarted {
+    text-align: center;
 }
 
 .gettingStarted--list {
@@ -193,14 +199,19 @@ hr {
 
 @media (min-width: 768px) {
     .hackclub--flag {
-        /* max-width: 100px; */
+        max-width: 100px;
     }
 
     .resources {
-        display: inline-flex;
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: auto;
+        padding: 0 10rem;
+        border: red 3px solid;
+    }
+
+    .about h2 {
+        text-align: left;
     }
 
     .about {
@@ -214,11 +225,5 @@ hr {
 
     .about hr {
         margin: 0;
-    }
-}
-
-@media (min-width: 1000px) {
-    .resources {
-        width: 50vw;
     }
 }
