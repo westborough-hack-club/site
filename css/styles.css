@@ -293,6 +293,10 @@ Content
 Media Queries
 ---------- */
 @media (max-width: 768px) {
+    /* h1 {
+        height: 120px;
+    } */
+
     hr {
         width: auto;
     }
