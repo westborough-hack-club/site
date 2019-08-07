@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="header" id="particles-js">
+    <div class="header">
         <img src="images/hackclub--flag.svg" alt="Hack Club 2019 Flag" class="hackclub--flag">
         <div class="header--main">
 
@@ -48,15 +48,29 @@
             <div class="about--text">
                 <h2>Who are we?</h2>
                 <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim augue nunc curabitur rhoncus nulla
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim augue nunc
+                    curabitur rhoncus nulla
+                    interdum urna. Etiam id vitae nibh sit quam. Turpis porttitor posuere arcu nunc. Facilisis mattis
+                    iaculis scelerisque viverra id suspendisse nibh pellentesque.</p>
+            </div>
+            <div>
+                <img src="images/connected_world_wuay.svg" alt="Network across the world." class="illustration">
+            </div>
+            <div>
+                <img src="images/team_spirit_hrr4.svg" alt="Network across the world." class="illustration">
+            </div>
+            <div class="about--text">
+                <h2>Why should you join us?</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim augue nunc
+                    curabitur rhoncus nulla
                     interdum urna. Etiam id vitae nibh sit quam. Turpis porttitor posuere arcu nunc. Facilisis mattis
                     iaculis scelerisque viverra id suspendisse nibh pellentesque.</p>
             </div>
         </div>
         <div class="resources">
-            <div class="gettingStarted">
+            <div class="resource--item">
                 <h2>Getting Started</h2>
-                <hr>
                 <ul class="gettingStarted--list">
                     <li><a href="https://hackclub.com/community/">Slack</a></li>
                     <li><a href="https://hackclub.com/workshops/preface/">Preface</a></li>
@@ -64,21 +78,26 @@
                     <li><a href="https://hackclub.com/conduct/">Code of Conduct</a></li>
                 </ul>
             </div>
-            <div class="submitProject">
+            <div class="resource--item">
                 <h2>Submit a Project</h2>
-                <hr>
                 <form action="https://formspree.io/syeruva2003@gmail.com" method="POST" />
                 <input type="hidden" name="_subject" value="Westborough Hack Club Project Submission" />
                 <input type="hidden" name="_cc" value="whs-hackclub-project@theos.space, syeruva2003@outlook.com" />
-                <label>Name: <input type="text" name="Name"></label>
-                </br>
-                <label>Link: </label><input type="url" name="Link"></label>
-                </br>
-                <input type="submit" value="Submit">
+                <div class="form__group">
+                    <input type="text" name="Name" class="form__input" placeholder="Full Name" required>
+                    <label for="name" class="form__label">Full Name</label>
+                </div>
+
+                <div class="form__group">
+                    <input type="url" name="Link" class="form__input" placeholder="Link" required>
+                    <label type="url" class="form__label">Link to your project</label>
+                </div>
+                <input type="submit" value="Submit" class="btn">
                 </form>
             </div>
         </div>
     </div>
+    <div class="footer"></div>
 </body>
 
 </html>

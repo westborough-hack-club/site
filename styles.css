@@ -36,7 +36,8 @@ h2 {
     font-weight: bold;
     font-size: 2rem;
     line-height: 2.75rem;
-    color: var(--color--text__primary)
+    color: var(--color--text__primary);
+    margin-bottom: 1rem;
 }
 
 h3 {
@@ -73,11 +74,22 @@ a:hover {
 
 ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
+hr {
+    width: 400px;
+    color: var(--color--primary__light);
+}
+
+/* ----------
+Header
+---------- */
+
 .header {
-    background-image: linear-gradient(to right bottom, var(--color--primary__dark), var(--color--primary)),
-        url();
+    background-color: var(--color--primary);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -149,81 +161,127 @@ ul {
     /* margin-bottom: 0.3rem; */
 }
 
+/* ----------
+Content 
+----------*/
+
 .content {
-    text-align: center;
-    margin: 8rem 5rem;
-    font-style: normal;
-    font-weight: normal;
+    margin: 10rem;
     color: var(--color--text__primary);
-    font-size: 30px;
-    line-height: 41px;
-    border: blue 3px solid;
 }
 
 .about {
-    border: green 3px solid;
-}
-
-.about h2 {
-    text-align: center;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-column-gap: 10rem;
 }
 
 .about--text {
     color: var(--color--text__secondary);
-    font-size: 1rem;
-    line-height: 2rem;
+    /* width: 600px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-hr {
-    width: 20rem;
-    margin: auto;
+.illustration {
+    max-width: 100%;
+    max-height: auto;
 }
 
 .resources {
-    margin: 5rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-around;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.resource--item {
+    background-color: var(--color--primary__light);
+    border-radius: 16px;
+    width: 400px;
+    padding: 2rem 3rem;
+}
+
+.form__group {
+    text-align: left;
+}
+
+.form__input {
+    font-size: 1rem;
+    font-family: inherit;
+    padding: .5rem 1rem;
+    color: inherit;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
     width: 100%;
+    transition: all .3s;
 }
 
-.gettingStarted {
-    text-align: center;
+.form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid var(--color--primary);
 }
 
-.gettingStarted--list {
-    text-align: center;
-    margin: 1rem;
+.form__input:focus:invalid {
+    border-bottom: 3px solid var(--color--accent);
 }
 
-.submitProject {
-    text-align: center;
+.form__input::-webkit-input-placeholder {
+    color: var(--color--text__primary);
 }
 
-@media (min-width: 768px) {
-    .hackclub--flag {
-        max-width: 100px;
-    }
-
-    .resources {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 10rem;
-        border: red 3px solid;
-    }
-
-    .about h2 {
-        text-align: left;
-    }
-
-    .about {
-        text-align: left;
-        margin: 10rem;
-    }
-
-    .about--text {
-        width: 500px;
-    }
-
-    .about hr {
-        margin: 0;
-    }
+.form__label {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 1rem;
+    margin-top: .2rem;
+    margin-bottom: .7rem;
+    display: block;
+    transition: all .3s;
 }
+
+.form__input:placeholder-shown+.form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+}
+
+
+.btn {
+    /* Clearing default button styles */
+    font-size: 100%;
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+
+    background-color: var(--color--accent);
+    color: var(--color--text);
+    padding: 0.5rem;
+    border-radius: 16px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    height: 5vh;
+    background-color: var(--color--primary__dark);
+}
+
+/* ----------
+Testing
+---------- */
