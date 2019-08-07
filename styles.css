@@ -56,13 +56,15 @@ h4 {
     color: var(--color--primary__light);
 }
 
-a {
+a,
+a:visited,
+a:hover,
+a:active {
     color: inherit;
     text-decoration: none;
-}
 
-a:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid var(--color--accent);
+    padding-bottom: 0px;
 }
 
 ul {
@@ -79,6 +81,14 @@ hr {
     margin-bottom: 20px;
 }
 
+.italics {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 600;
+}
+
 /* ----------
 Header
 ---------- */
@@ -92,18 +102,9 @@ Header
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
     padding-top: 30px;
     padding-bottom: 100px;
-}
 
-.header a {
-    color: var(--color--text);
-}
 
-.hackclub--flag {
-    max-width: 300px;
-}
-
-.header--main {
-    padding: 80px;
+    padding: 200px;
     display: grid;
     justify-content: center;
 }
@@ -214,6 +215,10 @@ Content
     margin: 60px auto;
 }
 
+.resource--item h2 {
+    margin-bottom: 20px;
+}
+
 .form__group {
     text-align: left;
 }
@@ -233,7 +238,7 @@ Content
 
 .form__input:focus {
     outline: none;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid var(--color--primary);
 }
 
@@ -249,11 +254,12 @@ Content
     font-size: 20px;
     font-weight: 400;
     /* font-weight: 700; */
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 4px;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
     display: block;
     transition: all .3s;
+    color: var(--color--text__secondary);
 }
 
 .form__input:placeholder-shown+.form__label {
@@ -273,6 +279,11 @@ Content
     color: var(--color--text);
     padding: 10px;
     border-radius: 16px;
+    width: 100%;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 .footer {
@@ -288,8 +299,7 @@ Media Queries
         width: auto;
     }
     
-    .header--main {
-        padding: 50px 30px;
+    .header {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -314,15 +324,6 @@ Media Queries
         text-align: center;
     }
 
-    .about--section {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .illustration {
-        margin-top: 30px;
-    }
-
     .illustration {
         max-height: 100%;
         max-width: auto;
@@ -330,9 +331,17 @@ Media Queries
 }
 
 @media (max-width: 1200px) {
+    .header {
+        padding: 120px 30px;
+    }
+
     .about--section {
         display: flex;
         flex-direction: column;
+    }
+
+    .about--section:nth-child(even) {
+        flex-direction: column-reverse;
     }
 
     .illustration {
