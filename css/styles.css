@@ -95,8 +95,6 @@ Header
 
 .header {
     background-color: var(--color--primary);
-    background-size: cover;
-    background-position: top;
     position: relative;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
@@ -298,7 +296,7 @@ Media Queries
     hr {
         width: auto;
     }
-    
+
     .header {
         display: flex;
         flex-direction: column;
@@ -351,4 +349,7 @@ Media Queries
 
 /* ----------
 Testing
+---------- */
+
+/* ----------
 ---------- */
