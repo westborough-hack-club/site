@@ -283,6 +283,10 @@ Content
 Media Queries
 ---------- */
 @media (max-width: 768px) {
+    hr {
+        width: auto;
+    }
+    
     .header--main {
         padding: 50px 30px;
         display: flex;
