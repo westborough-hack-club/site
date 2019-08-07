@@ -37,7 +37,7 @@ h2 {
     font-size: 40px;
     line-height: 55px;
     color: var(--color--text__primary);
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 h3 {
@@ -76,6 +76,7 @@ ul {
 hr {
     width: 400px;
     color: var(--color--primary__light);
+    margin-bottom: 20px;
 }
 
 /* ----------
@@ -325,6 +326,17 @@ Media Queries
     .illustration {
         max-height: 100%;
         max-width: auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about--section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .illustration {
+        margin-top: 30px;
     }
 }
 
