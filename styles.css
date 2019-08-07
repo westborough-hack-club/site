@@ -27,8 +27,8 @@ h1 {
     font-style: normal;
     font-weight: 800;
     font-size: 60px;
-    line-height: 3.25rem;
-    margin: 0.75rem 0 1.5rem 0;
+    line-height: 65px;
+    margin: 15px 0 30px 0;
 }
 
 h2 {
@@ -137,15 +137,15 @@ Header
 .month {
     line-height: 1;
     background-color: var(--color--text);
-    color: var(--color--text__primary);
-    font-size: 30px;
-    padding: 4px 0;
+    color: var(--color--primary);
+    font-size: 1.5rem;
+    padding: 0.2rem 0;
 }
 
 .day {
     line-height: 1.25;
-    font-size: 60px;
-    color: var(--color--accent);
+    font-size: 3rem;
+    color: var(--color--text);
 }
 
 .nextMeeting--text {
@@ -181,7 +181,7 @@ Content
 .about--section {
     display: grid;
     grid-template-columns: 5fr 5fr;
-    grid-column-gap: 200px;
+    grid-column-gap: 10rem;
     margin: 100px 0;
 
     justify-items: center;
@@ -215,7 +215,7 @@ Content
     background-color: var(--color--primary__light);
     border-radius: 16px;
     width: 400px;
-    padding: 40px 60px;
+    padding: 40px 360px;
     margin: 60px auto;
 }
 
@@ -226,7 +226,7 @@ Content
 .form__input {
     font-size: 20px;
     font-family: inherit;
-    padding: .10px 20px;
+    padding: 10px 20px;
     color: inherit;
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -264,7 +264,7 @@ Content
 .form__input:placeholder-shown+.form__label {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-80px);
+    transform: translateY(-4rem);
 }
 
 .btn {
@@ -276,18 +276,8 @@ Content
 
     background-color: var(--color--accent);
     color: var(--color--text);
-    padding: 10px;
+    padding: 100px;
     border-radius: 16px;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .footer {
@@ -306,6 +296,10 @@ Media Queries
     .about {
         margin: inherit auto;
         text-align: center;
+    }
+
+    .about--section div img {
+        display: none;
     }
 }
 
