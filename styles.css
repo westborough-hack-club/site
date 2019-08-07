@@ -299,14 +299,28 @@ Media Queries
         text-align: center;
         align-items: center;
     }
-    
+
     .content {
-        margin: 200px auto;
+        margin: 100px 30px;
     }
 
     .about {
         margin: inherit auto;
         text-align: center;
+    }
+
+    .about--section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .illustration {
+        margin-top: 30px;
+    }
+
+    .illustration {
+        max-height: 100%;
+        max-width: auto;
     }
 }
 
