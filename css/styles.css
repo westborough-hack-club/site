@@ -18,24 +18,24 @@
 body {
     font-family: 'Cabin', sans-serif;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 1.7;
+    font-size: 1.25em;
+    line-height: 1.5em;
     color: var(--color--text);
 }
 
 h1 {
     font-style: normal;
     font-weight: 800;
-    font-size: 60px;
-    line-height: 65px;
-    margin: 15px 0 30px 0;
+    font-size: 3em;
+    line-height: 1em;
+    margin: .25em 0 .5em 0;
 }
 
 h2 {
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
-    line-height: 55px;
+    font-size: 2em;
+    line-height: 1.5em;
     color: var(--color--text__primary);
     /* margin-bottom: 20px; */
 }
@@ -43,16 +43,16 @@ h2 {
 h3 {
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 0;
-    margin-bottom: 14px;
+    font-size: 1.5em;
+    line-height: .5em;
+    margin-bottom: .5rem;
 }
 
 h4 {
     font-style: normal;
     font-weight: 600;
-    font-size: 25px;
-    line-height: 34px;
+    font-size: 1.25em;
+    line-height: .25em;
     color: var(--color--primary__light);
 }
 
@@ -76,9 +76,8 @@ ul {
 }
 
 hr {
-    width: 400px;
     color: var(--color--primary__light);
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .italics {
@@ -111,6 +110,7 @@ Header
     display: flex;
     justify-content: flex-start;
     padding: 0;
+    align-items: center;
 }
 
 .calendar {
@@ -299,6 +299,10 @@ Media Queries
 
     hr {
         width: auto;
+    }
+
+    h4 {
+        line-height: 1.25em;
     }
 
     .header {
