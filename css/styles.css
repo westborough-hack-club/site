@@ -1,12 +1,82 @@
 :root {
+    --color--text: #ffffff;
+    --color--text__primary: #212121;
+    --color--text__secondary: #757575;
+    --color--divider: #BDBDBD; 
+
+    /* ----------
+    Primary Teal with Red Accent 
+    ---------- */
     --color--primary: #009688;
     --color--primary__dark: #00796B;
     --color--primary__light: #B2DFDB;
     --color--accent: #FF5252;
-    --color--text: #ffffff;
-    --color--text__primary: #212121;
-    --color--text__secondary: #757575;
-    --color--divider: #BDBDBD;
+
+    /* ----------
+    Primary Red with Light Blue Accent 
+    ---------- */
+    /* --color--primary: #F44336;
+    --color--primary__dark: #D32F2F;
+    --color--primary__light: #FFCDD2;
+    --color--accent: #03A9F4; */
+
+    /* ----------
+    Primary Deep Purple with Purple Accent 
+    ---------- */
+    /* --color--primary: #673AB7;
+    --color--primary__dark: #512DA8;
+    --color--primary__light: #D1C4E9;
+    --color--accent: #E040FB;  */
+
+    /* ----------
+    Primary Cyan with Blue Accent 
+    ---------- */
+    /* --color--primary: #00BCD4;
+    --color--primary__dark: #0097A7;
+    --color--primary__light: #B2EBF2;
+    --color--accent: #448AFF;  */
+
+    /* ----------
+    Primary Indigo with Blue Accent 
+    ---------- */
+    /* --color--primary: #3F51B5;
+    --color--primary__dark: #303F9F;
+    --color--primary__light: #C5CAE9;
+    --color--accent: #448AFF;  */
+    
+    /* ----------
+    Primary Green with Light Green Accent 
+    ---------- */
+    /* --color--primary: #4CAF50;
+    --color--primary__dark: #388E3C;
+    --color--primary__light: #C8E6C9;
+    --color--accent: #8BC34A;  */
+    
+    /* ----------
+    Primary Amber with Yellow Accent 
+    ---------- */
+    /* --color--primary: #FFC107;
+    --color--primary__dark: #FFA000;
+    --color--primary__light: #FFECB3;
+    --color--accent: #FFEB3B;  */
+
+    /* ----------
+    Primary Deep Orange with Orange Accent 
+    ---------- */
+    /* --color--primary: #FF5722;
+    --color--primary__dark: #E64A19;
+    --color--primary__light: #FFCCBC;
+    --color--accent: #FF9800;  */
+
+    /* ----------
+    Primary Blue Grey with Grey Accent 
+    ---------- */
+    /* --color--primary: #607D8B;
+    --color--primary__dark: #455A64;
+    --color--primary__light: #CFD8DC;
+    --color--accent: #9E9E9E;  */
+
+    
 }
 
 * {
@@ -202,7 +272,7 @@ Content
     justify-content: space-around;
     margin: 100px auto;
     text-align: center;
-    color: car(--color--text__primary);
+    color: var(--color--text__primary);
 }
 
 .resource--item {
