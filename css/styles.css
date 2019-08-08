@@ -2,7 +2,7 @@
     --color--text: #ffffff;
     --color--text__primary: #212121;
     --color--text__secondary: #757575;
-    --color--divider: #BDBDBD; 
+    --color--divider: #BDBDBD;
 
     /* ----------
     Primary Teal with Red Accent 
@@ -43,7 +43,7 @@
     --color--primary__dark: #303F9F;
     --color--primary__light: #C5CAE9;
     --color--accent: #448AFF;  */
-    
+
     /* ----------
     Primary Green with Light Green Accent 
     ---------- */
@@ -51,7 +51,7 @@
     --color--primary__dark: #388E3C;
     --color--primary__light: #C8E6C9;
     --color--accent: #8BC34A;  */
-    
+
     /* ----------
     Primary Amber with Yellow Accent 
     ---------- */
@@ -76,7 +76,7 @@
     --color--primary__light: #CFD8DC;
     --color--accent: #9E9E9E;  */
 
-    
+
 }
 
 * {
@@ -181,7 +181,7 @@ Header
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 80%);
 }
 
-.header--sideBySide{
+.header--sideBySide {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -191,7 +191,7 @@ Header
     padding-top: 5em;
 }
 
-.header--sideBySide .illustration{
+.header--sideBySide .illustration {
     max-width: 40%;
     max-height: auto;
     margin-left: 3em;
@@ -306,6 +306,7 @@ Content
 
 .resource--item h2 {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .form__group {
@@ -407,7 +408,7 @@ Media Queries
         min-height: 600px;
     }
 
-    .header--sideBySide .illustration{
+    .header--sideBySide .illustration {
         max-width: 100%;
     }
 
@@ -457,7 +458,7 @@ Media Queries
         flex-direction: column;
     }
 
-    .header--sideBySide .illustration{
+    .header--sideBySide .illustration {
         max-height: 60vh;
         max-width: auto;
         margin-left: 0;

@@ -23,12 +23,38 @@
 
     <div class="header header--left header--sideBySide" data-sal="slide-down" data-sal-duration="800">
         <h1>WHS Club Websites</h1>
-        <img src="images/undraw_tabs_jf82.svg" class="illustration"/>
+        <img src="images/undraw_tabs_jf82.svg" class="illustration" />
     </div>
     <div class="content">
         <div class="about">
-            <div class="about--item">
 
+            <div class="about--section">
+                <div class="about--text">
+                    <p data-sal="slide-up" data-sal-duration="800">Soon, any club at Westborough High School will be
+                        able to request to have a custom website built for them. However, we are not offering this
+                        service at the moment. Sign up using the form to be one of the first that is notified when you
+                        are able to request for a site.</p>
+                </div>
+                <div class="resource--item" data-sal="slide-left" data-sal-duration="800">
+                    <h2>Get Notified</h2>
+                    <form action="https://usebasin.com/f/4a343f618fa4" method="POST" />
+                    <div class="form__group">
+                        <input type="text" name="Name" class="form__input" placeholder="Full Name" required>
+                        <label class="form__label">Full Name</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="email" name="Email" class="form__input" placeholder="Email" required>
+                        <label class="form__label">Email</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="text" name="Club Name" class="form__input" placeholder="Club Name" required>
+                        <label class="form__label">Club Name</label>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -39,9 +65,10 @@
     <!-- <script src="js/jquery.js"></script>
     <script src="js/typed.js"></script> -->
     <script src="js/sal.js"></script>
+    <!-- sal.js -->
     <script>
         sal({
-            threshold: 0.1,
+            threshold: 0.5,
             once: true,
         });
     </script>
@@ -69,7 +96,6 @@
             })
         });
     </script> -->
-    <!-- sal.js -->
 </body>
 
 </html>
