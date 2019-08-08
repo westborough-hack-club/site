@@ -297,6 +297,7 @@ Content
     padding: 2em 1.8em;
     margin: 3em auto;
     vertical-align: middle;
+    max-width: 100%;
 }
 
 .resource--item h2 {
