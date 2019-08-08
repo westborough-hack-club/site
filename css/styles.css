@@ -147,7 +147,7 @@ ul {
 
 hr {
     color: var(--color--primary__light);
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 .italics {
@@ -167,11 +167,11 @@ Header
     position: relative;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-    padding-top: 30px;
-    padding-bottom: 100px;
+    padding-top: 1.5em;
+    padding-bottom: 5rem;
 
 
-    padding: 200px;
+    padding: 10rem;
     display: grid;
     justify-content: center;
 }
@@ -194,7 +194,7 @@ Header
 .header--sideBySide .illustration {
     max-width: 40%;
     max-height: auto;
-    margin-left: 3em;
+    margin-left: 6em;
 }
 
 .nextMeeting {
@@ -236,9 +236,9 @@ Header
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 2px;
-    margin-left: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
 }
 
 .NextMeeting--text__reminder {
@@ -251,22 +251,16 @@ Content
 ----------*/
 
 .content {
-    margin: 200px;
+    margin: 10em;
     color: var(--color--text__primary);
-    margin-top: 100px;
+    margin-top: 5em;
 }
-
-/* .about {
-    display: grid;
-    grid-template-columns: 5fr 5fr;
-    grid-column-gap: 10rem;
-} */
 
 .about--section {
     display: grid;
     grid-template-columns: 5fr 5fr;
-    grid-column-gap: 10rem;
-    margin: 100px 0;
+    grid-column-gap: 10em;
+    margin: 5em 0;
 
     justify-items: center;
     align-items: center;
@@ -291,21 +285,22 @@ Content
     flex-wrap: wrap;
     height: 100%;
     justify-content: space-around;
-    margin: 100px auto;
+    margin: 5em auto;
     text-align: center;
     color: var(--color--text__primary);
 }
 
 .resource--item {
     background-color: var(--color--primary__light);
-    border-radius: 16px;
-    width: 400px;
-    padding: 40px 36px;
-    margin: 60px auto;
+    border-radius: 0.8em;
+    width: 20em;
+    padding: 2em 1.8em;
+    margin: 3em auto;
+    vertical-align: middle;
 }
 
 .resource--item h2 {
-    margin-bottom: 20px;
+    margin-bottom: 1em;
     text-align: center;
 }
 
@@ -314,11 +309,11 @@ Content
 }
 
 .form__input {
-    font-size: 20px;
+    font-size: 1em;
     font-family: inherit;
-    padding: 10px 20px;
+    padding: 0.5em 1em;
     color: inherit;
-    border-radius: 2px;
+    border-radius: 0.1em;
     background-color: rgba(255, 255, 255, 0.5);
     border: none;
     border-bottom: 3px solid transparent;
@@ -328,7 +323,7 @@ Content
 
 .form__input:focus {
     outline: none;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.75em 1.5em rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid var(--color--primary);
 }
 
@@ -341,12 +336,12 @@ Content
 }
 
 .form__label {
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 400;
     /* font-weight: 700; */
     margin-left: 0px;
-    margin-top: 4px;
-    margin-bottom: 10px;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
     display: block;
     transition: all .3s;
     color: var(--color--text__secondary);
@@ -367,8 +362,8 @@ Content
 
     background-color: var(--color--accent);
     color: var(--color--text);
-    padding: 10px;
-    border-radius: 16px;
+    padding: 0.5em;
+    border-radius: 0.8em;
     width: 100%;
 }
 
@@ -420,7 +415,7 @@ Media Queries
     }
 
     .content {
-        margin: 100px 30px;
+        margin: 5em 1.5em;
     }
 
     .about {
@@ -436,7 +431,7 @@ Media Queries
 
 @media (max-width: 1200px) {
     .header {
-        padding: 120px 30px;
+        padding: 6em 1.5em;
     }
 
     .about--section {
@@ -449,7 +444,7 @@ Media Queries
     }
 
     .illustration {
-        margin-top: 30px;
+        margin-top: 1.5em;
     }
 }
 
