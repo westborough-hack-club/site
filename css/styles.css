@@ -244,6 +244,7 @@ Content
     margin: 10em;
     color: var(--color--text__primary);
     margin-top: 5em;
+    overflow: hidden;
 }
 
 .about--section {
