@@ -196,9 +196,9 @@ Header
 }
 
 .header--sideBySide .illustration {
-  max-width: 40%;
+  max-width: 50%;
   max-height: auto;
-  margin-left: 6em;
+  margin-left: 3em;
 }
 
 .nextMeeting {
@@ -253,10 +253,6 @@ Header
 /* ----------
 Content 
 ----------*/
-
-.header--sideBySide .illustration {
-  max-width: 100%;
-}
 
 .content {
   margin: 10em;
