@@ -7,18 +7,18 @@
   /* ----------
     Primary Teal with Red Accent 
     ---------- */
-  --color--primary: #009688;
+  /* --color--primary: #009688;
   --color--primary__dark: #00796b;
   --color--primary__light: #b2dfdb;
-  --color--accent: #ff5252;
+  --color--accent: #ff5252; */
 
   /* ----------
-    Primary Red with Light Blue Accent 
+    Primary Red with Hack Club Orange Accent 
     ---------- */
-  /* --color--primary: #F44336;
-    --color--primary__dark: #D32F2F;
-    --color--primary__light: #FFCDD2;
-    --color--accent: #03A9F4; */
+  --color--primary: #e42d42;
+  --color--primary__dark: #b52434;
+  --color--primary__light: #ffcdd2;
+  --color--accent: #e4732d;
 
   /* ----------
     Primary Deep Purple with Purple Accent 
@@ -131,8 +131,8 @@ a:active {
   color: inherit;
   text-decoration: none;
 
-  border-bottom: 1px solid var(--color--accent);
-  padding-bottom: 0px;
+  border-bottom: 1px solid var(--color--text);
+  padding-bottom: 2px;
 }
 
 ul {
@@ -144,7 +144,11 @@ ul {
 }
 
 hr {
-  color: var(--color--primary__light);
+  border-color: var(--color--accent);
+  border-image: none;
+  border-style: solid none none; 
+  border-width: 3px 0 0;
+
   margin-bottom: 1em;
 }
 
@@ -161,7 +165,9 @@ Header
 ---------- */
 
 .header {
-  background-color: var(--color--primary);
+  background-image: linear-gradient(
+                        to left bottom, var(--color--accent),var(--color--primary)),
+                        url();
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
@@ -292,11 +298,13 @@ Content
   justify-content: space-around;
   margin: 5em auto;
   text-align: center;
-  color: var(--color--text__primary);
+  color: var(--color--text);
 }
 
 .resource--item {
-  background-color: var(--color--primary__light);
+  background-image: linear-gradient(
+                        to right bottom, var(--color--accent),var(--color--primary)),
+                        url();
   border-radius: 0.8em;
   width: 20em;
   padding: 2em 1.8em;
@@ -308,37 +316,30 @@ Content
 .resource--item h2 {
   margin-bottom: 1em;
   text-align: center;
+  color: var(--color--text);
 }
 
 .form__group {
   text-align: left;
+  color: var(--color--text)
 }
 
 .form__input {
   font-size: 1em;
   font-family: inherit;
-  padding: 0.5em 1em;
+  padding: 0.5em 0.2em;
   color: inherit;
   border-radius: 0.1em;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
   border: none;
-  border-bottom: 3px solid transparent;
+  border-bottom: 3px solid var(--color--text);
   width: 100%;
   transition: all 0.3s;
-}
-
-.form__input:focus {
   outline: none;
-  box-shadow: 0 0.75em 1.5em rgba(0, 0, 0, 0.1);
-  border-bottom: 3px solid var(--color--primary);
-}
-
-.form__input:focus:invalid {
-  border-bottom: 3px solid var(--color--accent);
 }
 
 .form__input::-webkit-input-placeholder {
-  color: var(--color--text__secondary);
+  color: var(--color--text);
 }
 
 .form__label {
@@ -349,7 +350,7 @@ Content
   margin-bottom: 0.5em;
   display: block;
   transition: all 0.3s;
-  color: var(--color--text__secondary);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .form__input:placeholder-shown + .form__label {
@@ -364,21 +365,21 @@ Content
   font-family: inherit;
   border: 0;
   padding: 0;
+  background-color: rgba(255, 255, 255, 0);
 
-  background-color: var(--color--accent);
+  
   color: var(--color--text);
+  border: var(--color--text) solid 2px;
   padding: 0.5em;
   border-radius: 0.8em;
-  width: 100%;
+  /* width: 100%; */
+  width: 50%;
+
+  word-spacing: 0.5em;
 }
 
 .btn:hover {
   cursor: pointer;
-}
-
-.footer {
-  height: 5vh;
-  background-color: var(--color--primary__dark);
 }
 
 /* ----------
