@@ -308,6 +308,7 @@ Content
   height: 100%;
   justify-content: space-around;
   margin: 5em auto;
+  margin-bottom: 0;
   text-align: center;
   color: var(--color--text);
 }
@@ -391,6 +392,11 @@ Content
 
 .btn:hover {
   cursor: pointer;
+}
+
+.footer {
+  height: 5vh;
+  background-color: var(--color--primary__dark);
 }
 
 /* ----------
