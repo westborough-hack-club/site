@@ -135,6 +135,13 @@ a:active {
   padding-bottom: 2px;
 }
 
+.about a,
+.about a:visited,
+.about a:hover,
+.about a:active {
+  border-color: var(--color--text__primary);
+}
+
 ul {
   list-style-type: none;
   display: flex;
