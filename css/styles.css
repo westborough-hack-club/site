@@ -153,7 +153,7 @@ ul {
 hr {
   border-color: var(--color--accent);
   border-image: none;
-  border-style: solid none none; 
+  border-style: solid none none;
   border-width: 3px 0 0;
 
   margin-bottom: 1em;
@@ -173,8 +173,11 @@ Header
 
 .header {
   background-image: linear-gradient(
-                        to right bottom, rgba(228,45,66, 1),rgba(228,115,45, 1)),
-                        url(images/clubImages/studentsLeaving.png);
+      to right bottom,
+      rgba(228, 45, 66, 1),
+      rgba(228, 115, 45, 1)
+    ),
+    url(images/clubImages/studentsLeaving.png);
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
@@ -315,14 +318,19 @@ Content
 
 .resource--item {
   background-image: linear-gradient(
-                        to right bottom, var(--color--accent),var(--color--primary)),
-                        url();
+      to right bottom,
+      var(--color--accent),
+      var(--color--primary)
+    ),
+    url();
   border-radius: 0.8em;
   width: 20em;
   padding: 2em 1.8em;
   margin: 3em auto;
   vertical-align: middle;
   max-width: 100%;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: -5px 5px 5px 3px rgba(228, 115, 45, 0.5);
 }
 
 .resource--item h2 {
@@ -333,7 +341,7 @@ Content
 
 .form__group {
   text-align: left;
-  color: var(--color--text)
+  color: var(--color--text);
 }
 
 .form__input {
@@ -379,7 +387,6 @@ Content
   padding: 0;
   background-color: rgba(255, 255, 255, 0);
 
-  
   color: var(--color--text);
   border: var(--color--text) solid 2px;
   padding: 0.5em;
