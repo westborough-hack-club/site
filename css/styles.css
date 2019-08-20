@@ -173,8 +173,8 @@ Header
 
 .header {
   background-image: linear-gradient(
-                        to left bottom, var(--color--accent),var(--color--primary)),
-                        url();
+                        to right bottom, rgba(228,45,66, 1),rgba(228,115,45, 1)),
+                        url(images/clubImages/studentsLeaving.png);
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
@@ -295,6 +295,10 @@ Content
 .illustration {
   max-width: 100%;
   max-height: auto;
+}
+
+.about--image {
+  border-radius: 10%;
 }
 
 .resources {
