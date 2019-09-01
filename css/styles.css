@@ -271,12 +271,10 @@ Content
 ----------*/
 
 .content {
+  margin: 10em;
   color: var(--color--text__primary);
   margin-top: 5em;
   overflow: hidden;
-
-  width: 100%;
-  margin: 10em;
 }
 
 .about--section {
@@ -316,7 +314,6 @@ Content
   margin-bottom: 0;
   text-align: center;
   color: var(--color--text);
-  width: 100%
 }
 
 .resource--item {
@@ -326,11 +323,12 @@ Content
       var(--color--primary)
     ),
     url();
-    border-radius: 0.8em;
-    width: 45%;
-    padding: 2em 1.8em;
-    margin: 3em auto;
-    vertical-align: middle;
+  border-radius: 0.8em;
+  width: 20em;
+  padding: 2em 1.8em;
+  margin: 3em auto;
+  vertical-align: middle;
+  max-width: 100%;
 }
 
 .resource--item h2 {
