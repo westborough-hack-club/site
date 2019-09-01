@@ -276,7 +276,7 @@ Content
   overflow: hidden;
 
   width: 100%;
-  padding: 10em;
+  padding: 5em 10em;
 }
 
 .about--section {
@@ -302,9 +302,10 @@ Content
   max-height: auto;
 }
 
-.illustration:hover {
+.about--image:hover {
   transform: scale(1.1);
-  transition: all 0.5 ease-in-out;
+  transform-origin:0 0;
+  transition: all 0.1 ease-in;
 }
 
 .about--image {
