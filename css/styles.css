@@ -271,10 +271,12 @@ Content
 ----------*/
 
 .content {
-  margin: 10em;
   color: var(--color--text__primary);
   margin-top: 5em;
   overflow: hidden;
+
+  width: 100%;
+  padding: 10em;
 }
 
 .about--section {
@@ -298,6 +300,11 @@ Content
 .illustration {
   max-width: 100%;
   max-height: auto;
+}
+
+.illustration:hover {
+  transform: scale(1.1);
+  transition: all 0.5 ease-in-out;
 }
 
 .about--image {
