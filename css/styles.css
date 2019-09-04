@@ -176,8 +176,7 @@ Header
       to right bottom,
       rgba(228, 45, 66, 1),
       rgba(228, 115, 45, 1)
-    ),
-    url(images/clubImages/studentsLeaving.png);
+    );
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);

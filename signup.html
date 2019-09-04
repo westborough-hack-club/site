@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/basscss/8.1.0/css/basscss.min.css" integrity="sha256-61pD9NnYfWFhrgxYQqwoQVsCcAF5/mUNdoBn14gnA0I=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,700,700i&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js" integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script>
+    <script src="js/form.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+        }
+
+        p, h1, h2, h3 {
+            font-family: 'Nunito Sans', sans-serif;
+        }
+		body {
+			background-image: linear-gradient(
+      			to bottom,
+     			 rgba(228, 45, 66, 1),
+      			rgba(228, 115, 45, 1)
+    		);
+			background-repeat: no-repeat;
+    		background-attachment: fixed;
+		}
+
+        .container {
+            max-width: 52rem;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        .center-the-stuff {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .background {
+            position: absolute;
+
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            z-index: -1;
+
+            width: 100%;
+            height: 100%;
+
+            border-radius: 10px;
+            background-color: white;
+            opacity: .25;
+        }
+
+        .field-grid {
+            display: grid;
+            grid-gap: 1.25rem;
+            grid-template-columns: repeat(2, auto);
+        }
+
+        .email-phone-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1.25rem;
+        }
+
+        .field input {
+            width: 100%;
+            height: 2.5rem;
+            border: none;
+            border-radius: 3px;
+            padding: .5rem;
+            font-size: .95em;
+        }
+
+        .field p {
+            width: 100%;
+            font-size: 1.25em;
+            font-weight: 600;
+        }
+
+        .submit {
+            width: 6rem;
+            height: 3.5rem;
+            font-size: 1em;
+            border: none;
+            border-radius: 10px;
+            background-color: #8cd9cb;
+        }
+
+        @media(max-width: 400px) {
+            .field-grid {
+                grid-template-columns: unset;
+                grid-gap: .25rem;
+            }
+
+            .center-the-stuff {
+                height: unset;
+                padding: 2rem;
+            }
+        }
+	</style>
+</head>
+<body>
+    <div class="center-the-stuff">
+        <div class="container">
+            <div class="form">
+                <div class="shit-inside-the-form">
+                    <h1 class="mb0 bold">Interested in joining the Westborough Hack Club?</h1>
+                    <h2 class="mb0">Our first meeting is tomorrow, we'll have free pizza, snacks, & drinks.</h2>
+                    <h3 class="mb3 italic">Enter your info below and we'll put your name on the list + send a reminder.</h3>
+                    <form>
+                        <div class="field-grid">
+                            <div class="field">
+                                <p>First Name</p>
+                                <input name="firstName" type="text" placeholder="Bob">
+                            </div>
+
+                            <div class="field">
+                                <p>Last Name</p>
+                                <input name="lastName" type="text" placeholder="Smith">
+                            </div>                  
+                            <div class="field">
+                                <p>Email</p>
+                                <input type="text" name="email" placeholder="smithbob22@student.westboroughk12.org">
+                            </div>
+                            <div class="field">
+                                <p>Phone Number</p>
+                                <input type="tell" name="phoneNumber" placeholder="508-456-7890">
+                            </div>
+                        </div>
+                        <button class="submit mt2">I'll be there!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="background"></div>
+        </div>
+    </div>
+</body>
+</html>
