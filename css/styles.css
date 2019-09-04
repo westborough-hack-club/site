@@ -279,7 +279,7 @@ Content
 .about--section {
   display: grid;
   grid-template-columns: 5fr 5fr;
-  grid-column-gap: 10em;
+  grid-column-gap: 5em;
   margin: 5em 0;
 
   justify-items: center;
@@ -323,11 +323,16 @@ Content
     ),
     url();
   border-radius: 0.8em;
-  width: 20em;
+  width: 48%;
   padding: 2em 1.8em;
   margin: 3em auto;
   vertical-align: middle;
-  max-width: 100%;
+}
+
+.gettingStarted--list {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
 }
 
 .resource--item h2 {
@@ -407,6 +412,42 @@ Content
 Media Queries
 ---------- */
 
+@media (max-width: 75rem) {
+  .header {
+    padding: 6em 1.5em;
+  }
+
+  .header--sideBySide {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header--sideBySide .illustration {
+    max-height: 60vh;
+    max-width: auto;
+    margin-left: 0;
+  }
+
+  .about--section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about--section:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .illustration {
+    margin-top: 1.5em;
+  }
+  .resource--item {
+    /* width: 20em; */
+    width: 100%;
+    /* min-width: 20em; */
+  }
+}
+
 @media (max-width: 64rem) {
   /* h1 {
         height: 120px;
@@ -453,36 +494,5 @@ Media Queries
   .illustration {
     max-height: 100%;
     max-width: auto;
-  }
-}
-
-@media (max-width: 75rem) {
-  .header {
-    padding: 6em 1.5em;
-  }
-
-  .header--sideBySide {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .header--sideBySide .illustration {
-    max-height: 60vh;
-    max-width: auto;
-    margin-left: 0;
-  }
-
-  .about--section {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about--section:nth-child(even) {
-    flex-direction: column-reverse;
-  }
-
-  .illustration {
-    margin-top: 1.5em;
   }
 }
