@@ -270,9 +270,10 @@ Content
 ----------*/
 
 .content {
-  margin: 10em;
+  margin: 5em;
+  padding: 5em;
+  padding-top: 0;
   color: var(--color--text__primary);
-  margin-top: 5em;
   overflow: hidden;
 }
 
@@ -297,6 +298,11 @@ Content
 .illustration {
   max-width: 100%;
   max-height: auto;
+}
+
+.illustration:hover {
+  transform: scale(1.1);
+  z-index: 100;
 }
 
 .about--image {
@@ -483,7 +489,9 @@ Media Queries
   }
 
   .content {
-    margin: 5em 1.5em;
+    margin: 5em 0.75em;
+    padding: 0.75em;
+    padding-top: 0;
   }
 
   .about {
