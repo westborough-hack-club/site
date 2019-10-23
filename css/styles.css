@@ -26,7 +26,7 @@
   /* --color--primary: #673AB7;
     --color--primary__dark: #512DA8;
     --color--primary__light: #D1C4E9;
-    --color--accent: #E040FB;  */ 
+    --color--accent: #E040FB;  */
 
   /* ----------
     Primary Cyan with Blue Accent 
@@ -84,7 +84,7 @@
 }
 
 body {
-  font-family: "Cabin", sans-serif;
+  font-family: 'Cabin', sans-serif;
   font-weight: 400;
   font-size: 1.25em;
   line-height: 1.5;
@@ -173,10 +173,10 @@ Header
 
 .header {
   background-image: linear-gradient(
-      to right bottom,
-      rgba(228, 45, 66, 1),
-      rgba(228, 115, 45, 1)
-    );
+    to right bottom,
+    rgba(228, 45, 66, 1),
+    rgba(228, 115, 45, 1)
+  );
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
@@ -296,12 +296,14 @@ Content
 }
 
 .illustration {
+  transition: 0.15s;
   max-width: 100%;
   max-height: auto;
 }
 
 .illustration:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  transition: 0.15s;
   z-index: 100;
 }
 
