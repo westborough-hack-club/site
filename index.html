@@ -26,12 +26,8 @@
             <h1 class="header--text">A place for <span id="typed" class="typed">makers</span></h1>
             <div class="nextMeeting">
                 <div class="calendar">
-                    <div class="month">
-                        Nov
-                    </div>
-                    <div class="day">
-                        7
-                    </div>
+                    <div class="month" id="month"></div>
+                    <div class="day" id="day"></div>
                 </div>
                 <div class="nextMeeting--text">
                     <div class="nextMeeting--text__main">
@@ -188,6 +184,18 @@
             once: true,
         });
     </script>
+
+    <script> //date of next meeting
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    var d = new Date();
+    d.setDate(d.getDate() + ((7-d.getDay())%7+4) % 7); //gets the date of the next thursday
+    day = d.getDate(); //sets js vars
+    month = months[d.getMonth()];
+    document.getElementById("month").innerText=month;  //sets in html
+    document.getElementById("day").innerHTML=day;
+    </script>
+    
 </body>
 
 </html>
