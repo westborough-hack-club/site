@@ -190,10 +190,8 @@
 
     var d = new Date();
     d.setDate(d.getDate() + ((7-d.getDay())%7+4) % 7); //gets the date of the next thursday
-    day = d.getDate(); //sets js vars
-    month = months[d.getMonth()];
-    document.getElementById("month").innerText=month;  //sets in html
-    document.getElementById("day").innerHTML=day;
+    document.getElementById("month").innerText=months[d.getMonth()];  //sets in html
+    document.getElementById("day").innerHTML=d.getDate();
     </script>
     
 </body>
