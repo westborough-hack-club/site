@@ -506,3 +506,25 @@ Media Queries
     max-width: auto;
   }
 }
+
+button a,
+button a:hover {
+  text-decoration: none;
+  border: none;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn-full {
+  width: 100%;
+  background-color: var(--color--text);
+  color: var(--color--text__primary);
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+.btn-full:hover {
+  background-color: transparent;
+  color: var(--color--text);
+}

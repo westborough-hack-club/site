@@ -1,106 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="images/whs--logo.png" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/png" href="images/whs--logo.png">
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:400,400i,600,700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,600,700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/sal.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sal.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>Westborough Hack Club</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <a href="https://hackclub.com/" target="_blank">
-        <img style="position: absolute; top: 10px; left: 0; border: 0; width: 230px; z-index: 999"
-            src="images/hackclubAssets/hackclub--flag.svg" alt="Hack Club" data-sal="slide-right" data-sal-duration="800" />
+      <img
+        style="
+          position: absolute;
+          top: 10px;
+          left: 0;
+          border: 0;
+          width: 230px;
+          z-index: 999;
+        "
+        src="images/hackclubAssets/hackclub--flag.svg"
+        alt="Hack Club"
+        data-sal="slide-right"
+        data-sal-duration="800"
+      />
     </a>
     <div class="header" data-sal="slide-down" data-sal-duration="800">
-        <div class="header--content">
-            <h4>Welcome to Westborough Hack Club</h4>
-            <h1 class="header--text">A place for <span id="typed" class="typed">makers</span></h1>
-            <div class="nextMeeting">
-                <div class="calendar">
-                    <div class="month">???</div>
-                    <div class="day">?</div>
-                </div>
-                <div class="nextMeeting--text">
-                    <div class="nextMeeting--text__main">
-                        <h3>Next Meeting Unknown</h3>
-                        <p>Room A010, 2:35-3:30</p>
-                    </div>
-                    <div class="nextMeeting--text__reminder">
-                        <p><a href="https://airtable.com/shrxMhYPKTUSIvbVq" target="_blank">Get a Reminder ›</a></p>
-                    </div>
-                </div>
+      <div class="header--content">
+        <h4>Welcome to Westborough Hack Club</h4>
+        <h1 class="header--text">
+          A place for <span id="typed" class="typed">makers</span>
+        </h1>
+        <!-- <div class="nextMeeting">
+          <div class="calendar">
+            <div class="month">???</div>
+            <div class="day">?</div>
+          </div>
+          <div class="nextMeeting--text">
+            <div class="nextMeeting--text__main">
+              <h3>Next Meeting Unknown</h3>
+              <p>Room A010, 2:35-3:30</p>
             </div>
-        </div>
+            <div class="nextMeeting--text__reminder">
+              <p>
+                <a href="https://airtable.com/shrxMhYPKTUSIvbVq" target="_blank"
+                  >Get a Reminder ›</a
+                >
+              </p>
+            </div>
+          </div>
+        </div> -->
+        <a href="https://airtable.com/shrxMhYPKTUSIvbVq" target="_blank">
+          <div class="btn btn-full">Sign-Up ›</div>
+        </a>
+      </div>
     </div>
 
-
     <div class="content">
-        <div class="about">
+      <div class="about">
+        <div class="about--section">
+          <div class="about--text">
+            <h2 data-sal="slide-right" data-sal-duration="800">Who are we?</h2>
+            <hr data-sal="slide-right" data-sal-duration="800" />
 
-            <div class="about--section">
-                <div class="about--text">
-                    <h2 data-sal="slide-right" data-sal-duration="800">Who are we?</h2>
-                    <hr data-sal="slide-right" data-sal-duration="800">
+            <p data-sal="slide-up" data-sal-duration="800">
+              <a href="https://www.hackclub.com" target="_blank">Hack Club</a>
+              is a global network of diverse computer science clubs where
+              members learn to code. It’s by the students, for the students—we
+              teach each other how to code through tinkering and building
+              projects. Everyone has a place at Hack Club, regardless of whether
+              they are an artist, athlete, or musician. When we say
+              <span class="italics">hack</span>, we don't mean that we are
+              trying to break into servers, the word
+              <span class="italics">hack</span> has been repurposed to mean
+              <span class="bold">making cool projects</span>.
+            </p>
+          </div>
+          <div data-sal="slide-left" data-sal-duration="800">
+            <img
+              src="images/clubImages/studentEating.png"
+              alt="Network across the world."
+              class="illustration about--image"
+            />
+          </div>
+        </div>
 
-                    <p data-sal="slide-up" data-sal-duration="800"><a href="https://www.hackclub.com" target="_blank">Hack Club</a> is a
-                        global network of diverse computer science
-                        clubs where members learn to code. It’s by the students, for the students—we teach each other
-                        how to code through tinkering and building projects. Everyone has a place at Hack Club,
-                        regardless of whether they are an artist, athlete, or musician. When we say <span
-                            class="italics">hack</span>, we don't mean that we are trying to break into servers, the
-                        word <span class="italics">hack</span> has been repurposed to mean <span class="bold">making
-                            cool projects</span>.</p>
-                </div>
-                <div data-sal="slide-left" data-sal-duration="800">
-                    <img src="images/clubImages/studentEating.png" alt="Network across the world."
-                        class="illustration about--image">
-                </div>
-            </div>
+        <div class="about--section">
+          <div>
+            <img
+              src="images/illustrations/undraw_connected_world_wuay.svg"
+              alt="Network across the world."
+              class="illustration"
+              data-sal="slide-right"
+              data-sal-duration="800"
+            />
+          </div>
+          <div class="about--text">
+            <h2 data-sal="slide-left" data-sal-duration="800">
+              What does Hack Club give you?
+            </h2>
+            <hr data-sal="slide-left" data-sal-duration="800" />
 
-            <div class="about--section">
-                <div>
-                    <img src="images/illustrations/undraw_connected_world_wuay.svg" alt="Network across the world." class="illustration"
-                                        data-sal="slide-right" data-sal-duration="800">
-                </div>
-                <div class="about--text">
-                    <h2 data-sal="slide-left" data-sal-duration="800">What does Hack Club give you?</h2>
-                    <hr data-sal="slide-left" data-sal-duration="800">
+            <p data-sal="slide-up" data-sal-duration="800">
+              For starters, you'll get tons of free, amazingly awesome swag! In
+              addition to the global
+              <a href="https://www.hackclub.com/community" target="_blank"
+                >Hack Club Community</a
+              >, you will be able to connect with an amazing alumni network. We
+              will also help you get volunteer opportunities, connections with
+              local tech companies, and priority registration at local tech
+              events.
+            </p>
+          </div>
+        </div>
 
-                    <p data-sal="slide-up" data-sal-duration="800">For starters, you'll get tons of free, amazingly
-                        awesome swag! In addition to the global <a href="https://www.hackclub.com/community" target="_blank">Hack Club
-                            Community</a>, you will be able to
-                        connect with an amazing alumni network. We will also help you get volunteer opportunities,
-                        connections with local tech companies, and priority registration at local tech events.</p>
-                </div>
-            </div>
+        <div class="about--section">
+          <div class="about--text">
+            <h2 data-sal="slide-right" data-sal-duration="800">
+              Why should you join us?
+            </h2>
+            <hr data-sal="slide-right" data-sal-duration="800" />
 
-            <div class="about--section">
-                <div class="about--text">
-                    <h2 data-sal="slide-right" data-sal-duration="800">Why should you join us?</h2>
-                    <hr data-sal="slide-right" data-sal-duration="800">
+            <p data-sal="slide-up" data-sal-duration="800">
+              Coding is the closest thing that we have to a superpower. Our
+              generation will be the one to deal with pressing issues, like
+              poverty and climate change (it exists, we promise), and coding
+              enables you to go out and solve those problems. Oh, you don't know
+              how to code? No problem. We will walk you through the ropes from
+              step one.
+            </p>
+          </div>
+          <div>
+            <img
+              src="images/clubImages/viggy.png"
+              alt="Network across the world."
+              class="illustration about--image"
+              data-sal="slide-left"
+              data-sal-duration="800"
+            />
+          </div>
+        </div>
 
-                    <p data-sal="slide-up" data-sal-duration="800">Coding is the closest thing that we have to a
-                        superpower. Our generation will be the one to deal with pressing issues, like poverty and
-                        climate change (it exists, we promise),
-                        and coding enables you to go out and solve those problems. Oh, you don't know how to code? No
-                        problem. We will walk you through the ropes from step one.</p>
-                </div>
-                <div>
-                    <img src="images/clubImages/viggy.png" alt="Network across the world." class="illustration about--image"
-                            data-sal="slide-left" data-sal-duration="800">
-                </div>
-            </div>
-
-<!--             <div class="about--section">
+        <!--             <div class="about--section">
                 <div>
                     <img src="images/illustrations/undraw_trendy_interface_lg8x.svg" alt="Network across the world."
                         class="illustration" data-sal="slide-right" data-sal-duration="800">
@@ -116,34 +166,70 @@
                 </div>
             </div>
  -->
+      </div>
+      <div class="resources">
+        <div
+          class="resource--item gettingStarted--list"
+          data-sal="slide-right"
+          data-sal-duration="800"
+        >
+          <h2>Getting Started</h2>
+          <ul>
+            <li>
+              <a href="https://hackclub.com/community/" target="_blank"
+                >Slack</a
+              >
+            </li>
+            <li>
+              <a href="https://hackclub.com/workshops/preface/" target="_blank"
+                >Preface</a
+              >
+            </li>
+            <li>
+              <a href="https://hackclub.com/workshops/" target="_blank"
+                >Workshops</a
+              >
+            </li>
+            <li><a href="https://repl.it/" target="_blank">Repl.it</a></li>
+            <li>
+              <a href="https://hackclub.com/conduct/" target="_blank"
+                >Code of Conduct</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="resources">
-            <div class="resource--item gettingStarted--list" data-sal="slide-right" data-sal-duration="800">
-                <h2>Getting Started</h2>
-                <ul>
-                    <li><a href="https://hackclub.com/community/" target="_blank">Slack</a></li>
-                    <li><a href="https://hackclub.com/workshops/preface/" target="_blank">Preface</a></li>
-                    <li><a href="https://hackclub.com/workshops/" target="_blank">Workshops</a></li>
-                    <li><a href="https://repl.it/" target="_blank">Repl.it</a></li>
-                    <li><a href="https://hackclub.com/conduct/" target="_blank">Code of Conduct</a></li>
-                </ul>
+        <div
+          class="resource--item"
+          data-sal="slide-left"
+          data-sal-duration="800"
+        >
+          <h2>Submit a Project</h2>
+          <form action="https://usebasin.com/f/4a343f618fa4" method="POST">
+            <div class="form__group">
+              <input
+                type="text"
+                name="Name"
+                class="form__input"
+                placeholder="Full Name"
+                required
+              />
+              <label class="form__label">Full Name</label>
             </div>
-            <div class="resource--item" data-sal="slide-left" data-sal-duration="800">
-                <h2>Submit a Project</h2>
-                <form action="https://usebasin.com/f/4a343f618fa4" method="POST" />
-                <div class="form__group">
-                    <input type="text" name="Name" class="form__input" placeholder="Full Name" required>
-                    <label class="form__label">Full Name</label>
-                </div>
 
-                <div class="form__group">
-                    <input type="url" name="Link" class="form__input" placeholder="Link" required>
-                    <label class="form__label">Link to your project</label>
-                </div>
-                <button type="submit" class="btn">Submit &rarr;</button>
-                </form>
+            <div class="form__group">
+              <input
+                type="url"
+                name="Link"
+                class="form__input"
+                placeholder="Link"
+                required
+              />
+              <label class="form__label">Link to your project</label>
             </div>
+            <button type="submit" class="btn">Submit &rarr;</button>
+          </form>
         </div>
+      </div>
     </div>
     <div class="footer"></div>
 
@@ -155,45 +241,65 @@
     <script src="js/sal.js"></script>
     <!-- typed.js -->
     <script>
-        function newTyped() {}
-        $(function () {
-            $("#typed").typed({
-                // Change to edit text
-                strings: ["makers.", "coders.", "artists.", "musicians.", "athletes.",
-                    "designers.", "thinkers.", "dreamers."
-                ],
-                typeSpeed: 70,
-                backDelay: 900,
-                contentType: "html",
-                loop: true,
-                // loop: !0,
-                shuffle: true,
-                // shuffle: !0,
-                resetCallback: function () {
-                    newTyped()
-                }
-            }), $(".reset").click(function () {
-                $("#typed").typed("reset")
-            })
-        });
+      function newTyped() {}
+      $(function () {
+        $('#typed').typed({
+          // Change to edit text
+          strings: [
+            'makers.',
+            'coders.',
+            'artists.',
+            'musicians.',
+            'athletes.',
+            'designers.',
+            'thinkers.',
+            'dreamers.',
+          ],
+          typeSpeed: 70,
+          backDelay: 900,
+          contentType: 'html',
+          loop: true,
+          // loop: !0,
+          shuffle: true,
+          // shuffle: !0,
+          resetCallback: function () {
+            newTyped();
+          },
+        }),
+          $('.reset').click(function () {
+            $('#typed').typed('reset');
+          });
+      });
     </script>
     <!-- sal.js -->
     <script>
-        sal({
-            threshold: 0.1,
-            once: true,
-        });
+      sal({
+        threshold: 0.1,
+        once: true,
+      });
     </script>
 
-    <script> //date of next meeting
-    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    <script>
+      //date of next meeting
+      const months = [
+        'Jan',
+        'Feb',
+        'Mar',
+        'Apr',
+        'May',
+        'Jun',
+        'Jul',
+        'Aug',
+        'Sep',
+        'Oct',
+        'Nov',
+        'Dec',
+      ];
 
-    var d = new Date();
-    d.setDate(d.getDate() + ((7-d.getDay())%7+4) % 7); //gets the date of the next thursday
-    document.getElementById("month").innerText=months[d.getMonth()];  //sets in html
-    document.getElementById("day").innerHTML=d.getDate();
+      var d = new Date();
+      d.setDate(d.getDate() + ((((7 - d.getDay()) % 7) + 4) % 7)); //gets the date of the next thursday
+      document.getElementById('month').innerText = months[d.getMonth()]; //sets in html
+      document.getElementById('day').innerHTML = d.getDate();
     </script>
-    
-</body>
-
+  </body>
 </html>
